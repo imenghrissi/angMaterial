@@ -1,0 +1,24 @@
+.profil{
+    margin-right: 15px;
+  }
+  .profil .circle {
+    border-radius: 50%;
+    height: 50px;
+    background-color: white;
+  }
+  
+  .menu-spacer {
+    flex: 1 1 auto;
+  }
+  .alerts mat-icon{
+    margin-right: 15px;
+    position: relative;
+    top: 5px;
+    cursor: pointer;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .open-togg{
+      display:none;
+    }
+}
