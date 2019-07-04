@@ -9,6 +9,10 @@ import { SidenavComponent } from './shared/layout/sidenav/sidenav.component';
 import { ToolbarComponent } from './shared/layout/toolbar/toolbar.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ContentComponent } from './content/content.component';
+import { LoginComponent } from './login/login.component';
+
+import { UserModule } from './user/user.module';
+import { ServerModule } from './server/server.module';
 
 @NgModule({
   declarations: [
@@ -16,13 +20,17 @@ import { ContentComponent } from './content/content.component';
     SidenavComponent,
     ToolbarComponent,
     DashboardComponent,
-    ContentComponent
+    ContentComponent,    
+    LoginComponent,
+  
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    MaterialModule
+    MaterialModule,
+    UserModule,
+    ServerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
